@@ -1,14 +1,16 @@
 import React from "react";
-import "./styles/style.css";
+import "./style/style.css";
+import Header from "./components/Header/Header";
+import Subheader from "./components/Subheader/Subheader";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
-      <div>
-        <h1>Hello, React with TypeScript!</h1>
-      </div>
+      <Header />
+      <Subheader />
+      {/* Остальная часть приложения */}
     </div>
   );
-}
+};
 
 export default App;

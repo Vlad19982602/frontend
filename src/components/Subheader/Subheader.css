@@ -1,0 +1,72 @@
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Стили для навигации */
+.subnav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.subnav li {
+  margin: 0 15px;
+}
+
+.subnav a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.subnav a:hover {
+  text-decoration: underline;
+}
+
+/* Стили для социальных ссылок */
+.socials a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .subheader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subnav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subnav li {
+    margin: 5px 0;
+  }
+
+  .socials {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subheader {
+    padding: 10px;
+  }
+
+  .subnav a,
+  .socials a {
+    font-size: 14px;
+  }
+}
