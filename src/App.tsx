@@ -1,14 +1,17 @@
 import React from "react";
 import "./style/style.css";
-import Header from "./components/Header/Header";
-import Subheader from "./components/Subheader/Subheader";
+import Header from "./components/header/Header";
+import Subheader from "./components/subheader/Subheader";
+import Sidebar from "./components/sidebar/Sidebar";
 
 const App: React.FC = () => {
   return (
     <div>
       <Header />
       <Subheader />
-      {/* Остальная часть приложения */}
+      <div className="main-content">
+        <Sidebar />
+      </div>
     </div>
   );
 };

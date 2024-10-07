@@ -1,10 +1,19 @@
 .subheader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
   background-color: #f0f0f0;
   border-bottom: 2px solid #007bff;
+}
+
+.subheader__container {
+  display: flex; /* Flexbox для вертикального расположения элементов */
+  justify-content: space-between; /* Распределение элементов по краям */
+}
+
+.subheader__wrapper {
+  padding: 15px;
+}
+
+.subheader__title {
+  margin: 0 0 15px 0;
 }
 
 /* Стили для навигации */
@@ -29,14 +38,23 @@
 }
 
 /* Стили для социальных ссылок */
+.socials {
+  display: flex; /* Flexbox для горизонтального расположения иконок */
+  align-items: center; /* Выравнивание по центру */
+}
+
 .socials a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: #007bff;
+  margin-left: 15px; /* Отступ между иконками */
+  transition: transform 0.3s; /* Плавный переход для эффекта увеличения */
 }
 
 .socials a:hover {
-  text-decoration: underline;
+  transform: scale(1.2); /* Увеличение иконки при наведении */
+}
+
+.socials img {
+  width: 24px; /* Измените размер иконки по необходимости */
+  height: 24px; /* Измените размер иконки по необходимости */
 }
 
 /* Адаптивные стили */

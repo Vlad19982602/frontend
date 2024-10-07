@@ -93,6 +93,15 @@ nav {
   padding: 10px;
 }
 
-section {
+/* section {
   margin: 20px 0;
+} */
+
+.main-content {
+  display: flex; /* Flexbox для размещения сайдбара и основного контента */
+}
+
+main {
+  flex: 1; /* Основной контент займет оставшееся пространство */
+  padding: 20px; /* Отступы для основного контента */
 }

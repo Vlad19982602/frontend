@@ -1,0 +1,57 @@
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-right: 2px solid #007bff;
+}
+
+.sidebar__title {
+  margin: 0 0 15px 0;
+  font-size: 1.5em;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__item {
+  margin: 10px 0;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.sidebar h2 {
+  margin: 0 0 15px 0; /* Отступы для заголовка */
+  font-size: 1.5em; /* Размер шрифта */
+}
+
+.sidebar ul {
+  list-style: none; /* Убрать стандартные маркеры списка */
+  padding: 0; /* Убрать внутренние отступы */
+}
+
+.sidebar li {
+  margin: 10px 0; /* Отступ между пунктами списка */
+}
+
+.sidebar a {
+  text-decoration: none; /* Убрать подчеркивание */
+  color: #bc04ff; /* Цвет ссылки */
+}
+
+.sidebar a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Ширина сайдбара на мобильных устройствах */
+    border-right: none; /* Убрать правую границу */
+    border-bottom: 2px solid #007bff; /* Добавить нижнюю границу */
+  }
+}
