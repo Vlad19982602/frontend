@@ -1,0 +1,134 @@
+.calculator {
+  background-color: #f9f9f9; /* Фоновый цвет калькулятора */
+  padding: 20px;
+  border-radius: 8px; /* Скругленные углы */
+}
+
+.calculator__wrapper {
+  max-width: 600px; /* Максимальная ширина */
+  margin: 0 auto; /* Центрирование */
+}
+
+.calculator__title {
+  font-size: 1.5em; /* Размер шрифта для заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+  text-align: center; /* Центрирование заголовка */
+}
+
+.calculator__button {
+  padding: 15px 25px; /* Отступы для кнопки */
+  background-color: #007bff; /* Цвет кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убрать рамку */
+  border-radius: 4px; /* Скругленные углы */
+  cursor: pointer; /* Курсор при наведении */
+  font-size: 1.2em; /* Размер шрифта */
+  margin-bottom: 20px; /* Отступ снизу */
+  transition: transform 0.3s ease; /* Плавный переход для анимации */
+}
+
+.calculator__button:hover {
+  transform: scale(1.1); /* Увеличение кнопки при наведении */
+}
+
+.calculator__question {
+  font-size: 1.5em; /* Размер шрифта для вопроса */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.calculator__options {
+  list-style: none; /* Убрать маркеры списка */
+  padding: 0; /* Убрать внутренние отступы */
+}
+
+.calculator__option {
+  margin: 10px 0; /* Отступ между вариантами */
+  padding: 10px;
+  background-color: #e9ecef; /* Фоновый цвет для варианта */
+  border-radius: 4px; /* Скругленные углы */
+  cursor: pointer; /* Курсор при наведении */
+  transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+.calculator__option:hover {
+  background-color: #ced4da; /* Цвет при наведении */
+}
+
+.calculator__option.selected {
+  background-color: #76b82a; /* Цвет для выбранного варианта */
+  color: white; /* Цвет текста для выбранного варианта */
+}
+
+.calculator__range {
+  margin: 20px 0; /* Отступ между вопросами и ползунком */
+}
+
+.calculator__navigation {
+  display: flex; /* Flexbox для расположения кнопок */
+  justify-content: space-between; /* Распределение по краям */
+}
+
+.t-range {
+  appearance: none; /* Убрать стандартный вид ползунка */
+  background: #ddd; /* Фоновый цвет ползунка */
+  height: 8px; /* Высота ползунка */
+  border-radius: 4px; /* Скругленные углы */
+}
+
+.t-range::-webkit-slider-thumb {
+  appearance: none; /* Убрать стандартный вид ползунка */
+  background: #007bff; /* Цвет ползунка */
+  width: 20px; /* Ширина ползунка */
+  height: 20px; /* Высота ползунка */
+  border-radius: 50%; /* Скругленные углы */
+}
+
+.t-range__value-txt {
+  margin: 10px 0; /* Отступы */
+  font-size: 1.2em; /* Размер шрифта */
+}
+
+.t-range__interval-txt-wrapper {
+  display: flex; /* Flexbox для расположения минимального и максимального значений */
+  justify-content: space-between; /* Распределение по краям */
+}
+
+.t-input {
+  color: #252c35;
+  border: 1px solid #252c35;
+  background-color: #f3f2f1;
+  height: 34px;
+  width: 100%;
+  border-radius: 4px; /* Скругленные углы */
+  padding: 5px; /* Отступы внутри текстового поля */
+}
+
+.modal {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex; /* Flexbox для центрирования содержимого */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  z-index: 1000; /* Поверх остальных элементов */
+}
+
+.modal__content {
+  background: white; /* Фоновый цвет модального окна */
+  padding: 20px; /* Отступы */
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+  width: 50%;
+}
+
+.modal__content svg {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 3px;
+  width: 20px;
+  height: 20px;
+  color: #000;
+}
