@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Subheader from "./components/subheader/Subheader";
 import Sidebar from "./components/sidebar/Sidebar";
 import Calculator from "./components/calculator/Calculator";
+import VentilationSystems from "./components/ventilationSystem/VentilationSystems";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         </div>
         <div className="main-content">
           <main>
+            <VentilationSystems />
             <Calculator />
           </main>
         </div>
