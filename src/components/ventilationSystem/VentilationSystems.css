@@ -1,0 +1,26 @@
+.ventilation-container {
+  background-color: #f9f9f9; /* Фоновый цвет контейнера */
+  padding: 20px; /* Отступы */
+}
+
+.ventilation-cover__wrapper {
+  display: flex; /* Flexbox для выравнивания */
+  flex-direction: column; /* Вертикальное расположение */
+  justify-content: flex-end; /* Выравнивание по нижнему краю */
+}
+
+.ventilation__uptitle {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.ventilation__title {
+  font-size: 52px;
+}
+
+.ventilation__descr {
+  text-align: center; /* Центрирование текста */
+  font-size: 24px; /* Размер шрифта для описания */
+  color: #252c35; /* Цвет текста */
+}
