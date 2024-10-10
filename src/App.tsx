@@ -7,16 +7,23 @@ import Calculator from "./components/calculator/Calculator";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Header />
-      <Subheader />
-      <div className="main-content">
-        <Sidebar />
-        <main>
-          <Calculator />
-        </main>
+    <>
+      <div>
+        <Header />
+        <Subheader />
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <Sidebar />
+          <Sidebar />
+          <Sidebar />
+          <Sidebar />
+        </div>
+        <div className="main-content">
+          <main>
+            <Calculator />
+          </main>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

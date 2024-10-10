@@ -18,7 +18,6 @@ const Header: React.FC = () => {
         <div className="header__container">
           <div className="header__info">
             <h1 className="header__title title_h1">Fan Control</h1>
-            <Nav />
           </div>
         </div>
       </div>

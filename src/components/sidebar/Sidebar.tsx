@@ -12,8 +12,9 @@ import "./Sidebar.css";
  */
 const Sidebar: React.FC = () => {
   return (
+    // Sidebar component with links to company's work and projects.
     <aside className="sidebar page__sidebar">
-      <h2 className="sidebar__title">Our Works</h2>
+      <h2 className="sidebar__title">Наши работы</h2>
       <ul className="sidebar__list">
         <li className="sidebar__item">
           <a className="sidebar__link" href="#project1">
