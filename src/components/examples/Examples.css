@@ -1,0 +1,75 @@
+.examples-section {
+  margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.examples__list {
+  display: flex; /* Flexbox для расположения карточек */
+  flex-wrap: wrap; /* Обернуть карточки в строку */
+  justify-content: space-between; /* Распределение карточек */
+}
+
+.example__card {
+  background: white; /* Фоновый цвет карточки */
+  border: 1px solid #ddd; /* Граница карточки */
+  border-radius: 8px; /* Скругленные углы */
+  margin: 10px; /* Отступы между карточками */
+  overflow: hidden; /* Скрытие переполнения */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень карточки */
+  transition: transform 0.3s; /* Плавный переход для эффекта увеличения */
+  width: calc(33.33% - 20px); /* Ширина карточки для трех колонок */
+}
+
+.example__card:hover {
+  transform: scale(1.02); /* Увеличение карточки при наведении */
+}
+
+.example__img {
+  height: 200px; /* Высота изображения */
+  background-size: cover; /* Масштабирование изображения */
+  background-position: center; /* Центрирование изображения */
+}
+
+.example__text {
+  padding: 15px; /* Отступы для текста */
+}
+
+.example__uptitle {
+  font-size: 14px; /* Размер шрифта для подзаголовка */
+  color: #76b82a; /* Цвет подзаголовка */
+}
+
+.example__title {
+  font-size: 20px; /* Размер шрифта для заголовка */
+  margin: 5px 0; /* Отступы */
+}
+
+.example__descr {
+  font-size: 16px; /* Размер шрифта для описания */
+  color: #555; /* Цвет описания */
+}
+
+button.examples__show-more-button {
+  display: block;
+  margin: 0 auto; /* Центрирование кнопки */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .example__card {
+    width: calc(50% - 20px); /* Ширина карточки для двух колонок на планшетах */
+  }
+}
+
+@media (max-width: 480px) {
+  .example__card {
+    width: 100%; /* Ширина карточки для одной колонки на мобильных устройствах */
+  }
+
+  .example__title {
+    font-size: 18px; /* Уменьшение размера заголовка на мобильных */
+  }
+
+  .example__descr {
+    font-size: 14px; /* Уменьшение размера описания на мобильных */
+  }
+}

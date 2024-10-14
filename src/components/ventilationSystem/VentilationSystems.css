@@ -1,26 +1,58 @@
 .ventilation-container {
-  background-color: #f9f9f9; /* Фоновый цвет контейнера */
-  padding: 20px; /* Отступы */
+  position: relative; /* Относительное позиционирование для вложенных элементов */
 }
 
 .ventilation-cover__wrapper {
-  display: flex; /* Flexbox для выравнивания */
-  flex-direction: column; /* Вертикальное расположение */
-  justify-content: flex-end; /* Выравнивание по нижнему краю */
+  padding-top: 120px;
+  overflow: hidden; /* Скрытие переполнения */
+}
+
+.ventilation-cover__wrapper:before {
+  content: ""; /* Псевдоэлемент для фона */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(37, 44, 53, 0.7); /* Полупрозрачный фон */
+  height: 623px; /* Высота контейнера */
+  z-index: 1; /* Псевдоэлемент под текстом */
+}
+
+.ventilation-cover__content {
+  position: relative; /* Позиционирование для наложения на псевдоэлемент */
+  z-index: 2; /* Текст над псевдоэлементом */
+  text-align: center; /* Центрирование текста */
+  color: #ffffff; /* Цвет текста */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.ventilation__uptitle,
+.ventilation__title,
+.ventilation__descr {
+  position: relative; /* Позиционирование для наложения на псевдоэлемент */
+  z-index: 2; /* Текст над псевдоэлементом */
+  color: #ffffff; /* Цвет текста */
 }
 
 .ventilation__uptitle {
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  font-size: 14px; /* Размер шрифта для подзаголовка */
 }
 
 .ventilation__title {
-  font-size: 52px;
+  font-size: 46px; /* Размер шрифта для заголовка */
 }
 
 .ventilation__descr {
   text-align: center; /* Центрирование текста */
   font-size: 24px; /* Размер шрифта для описания */
-  color: #252c35; /* Цвет текста */
+}
+.ventilation__uptitle,
+.col_ {
+  padding: 50px;
+}
+
+.ventilation-cover__wrapper {
+  height: 623px; /* Высота контейнера */
 }
