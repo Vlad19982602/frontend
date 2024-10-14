@@ -16,5 +16,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "tailwind.config.js", "components/header"]
+  "include": [
+    "src",
+    "tailwind.config.js",
+    "components/header",
+    "post.config.js"
+  ]
 }
